@@ -50,10 +50,13 @@ CodeQL requires a build of compiled languages, and an analysis job can fail if o
 
     <details>
     <summary>Solution</summary>
-
-        uses: actions/setup-java@v1
-        with:
-            java-version: 15
+    
+    ```yaml
+    - name: Setup Java version
+      uses: actions/setup-java@v1
+      with:
+          java-version: 15
+    ```
 
     </details>
 
